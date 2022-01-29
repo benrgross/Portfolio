@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#img-avatar {
+  border-radius: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  #img-avatar {
+    width: 100px;
+  }
+}
+
+#signature {
+  width: 50%;
+  height: 90%;
+}
+
+.bottom__border {
+  border-bottom: 3px solid rgba(8, 8, 182, 0.527);
+  width: 40%;
+  margin-left: 1.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+.wrap {
+  max-width: 1024px;
+  padding: 80px 30px;
+  width: 100%;
+}
+
+.header {
+  display: flex;
+  margin-bottom: 80px;
+}
+
+.menu__item.menu__item {
+  border: none;
+}
+
+.menu__group {
+  margin-left: 0.5rem;
+}
+
+.link {
+  font-weight: 600;
+  color: #5e5e5e;
+  letter-spacing: 0.0625rem;
+  text-transform: uppercase;
+}
+.link:hover {
+  text-decoration: none;
+
+  color: rgba(45, 12, 231, 0.918);
+}
+
+.content {
+  padding-left: 11rem;
+  padding-right: 11rem;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%;
+  }
+}
+/* .header__section--media {
+  flex-shrink: 0;
+  margin-right: 4.1493775934%;
+}
+
+.header__section--menu {
+  align-self: center;
+  width: 100%;
+} */
