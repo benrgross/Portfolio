@@ -7,10 +7,10 @@ function Contact() {
     <div>
       <Container className="contact_callout">
         <h3>Contact Me</h3>
-        <h4>
+        <h5>
           Please reach out to me with any inqueries and I will respond within 1
           to 2 days!
-        </h4>
+        </h5>
       </Container>
       <ContactUs />
     </div>

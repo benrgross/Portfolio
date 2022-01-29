@@ -74,6 +74,10 @@ code {
 }
 
 .content {
+  font-family: "Rubik", sans-serif !important;
+  font-weight: 600;
+
+  letter-spacing: 0.0625rem;
   padding-left: 11rem;
   padding-right: 11rem;
 }
@@ -149,4 +153,28 @@ code {
   color: #5e5e5e;
   letter-spacing: 0.0625rem;
   width: 60%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .contact_callout {
+    font-family: "Rubik", sans-serif !important;
+    font-weight: 600;
+    color: #5e5e5e;
+    letter-spacing: 0.0625rem;
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: 10px;
+  }
+
+  .contact__form {
+    width: 90%;
+    margin: auto;
+    font-family: "Rubik", sans-serif;
+  }
+
+  .contact__cont {
+    width: 90%;
+    padding: 0px;
+  }
 }
