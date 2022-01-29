@@ -25,6 +25,7 @@
     "@fortawesome/free-brands-svg-icons": "^5.15.4",
     "@fortawesome/react-fontawesome": "^0.1.17",
     "axios": "^0.25.0",
+    "dotenv": "^8.2.0",
     "dom": "0.0.3",
     "express": "^4.17.2",
     "if-env": "^1.0.4",
