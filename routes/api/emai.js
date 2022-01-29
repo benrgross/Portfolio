@@ -11,4 +11,5 @@ router.post("/email", async (rec, res) => {
     console.log(err);
   }
 });
+
 module.exports = router;
