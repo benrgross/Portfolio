@@ -10,7 +10,7 @@ function NavBar() {
         <header className="header">
           <Col md={2}>
             <div>
-              <a href="/home">
+              <a href="/">
                 <img
                   id="img-avatar"
                   src="/img/ben-avatar.png"
@@ -47,7 +47,7 @@ function NavBar() {
                 </ListGroup.Item>
                 <ListGroup.Item className="menu__item">
                   {" "}
-                  <a className="link" href="#work">
+                  <a className="link" href="/contact">
                     Contact
                   </a>
                 </ListGroup.Item>
