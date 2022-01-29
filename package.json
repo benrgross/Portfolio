@@ -34,6 +34,7 @@
     "react-icons": "^4.3.1",
     "react-social-icons": "^5.9.0",
     "request": "^2.88.2",
-    "request-promise": "^4.2.6"
+    "request-promise": "^4.2.6",
+    "vercel": "^23.1.2"
   }
 }
