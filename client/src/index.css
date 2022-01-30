@@ -61,6 +61,21 @@ code {
   margin-left: 0.5rem;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .header__section--menu {
+    align-self: center;
+    width: 60%;
+  }
+  .wrap {
+    padding: 80px 5px;
+  }
+  .list-group-item {
+    padding: 0.3rem 0.25rem !important;
+  }
+}
+
 .link {
   font-weight: 600;
   color: #5e5e5e;
@@ -90,7 +105,7 @@ code {
     width: 100%;
   }
   .content__home--p {
-    width: 26rem;
+    width: 22rem;
   }
 }
 
