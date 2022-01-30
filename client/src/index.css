@@ -193,3 +193,12 @@ code {
     padding: 0px;
   }
 }
+
+.projects__cont {
+  margin-left: 10px;
+}
+
+.projects__h2 {
+  font-family: "Rubik", sans-serif !important;
+  text-transform: uppercase;
+}
