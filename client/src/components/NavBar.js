@@ -41,7 +41,7 @@ function NavBar() {
                 </ListGroup.Item>
                 <ListGroup.Item className="menu__item">
                   {" "}
-                  <a className="link" href="#work">
+                  <a className="link" href="/projects">
                     Projects
                   </a>
                 </ListGroup.Item>

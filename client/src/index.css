@@ -20,7 +20,7 @@ code {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   #img-avatar {
-    width: 100px;
+    width: 80px;
   }
 }
 
