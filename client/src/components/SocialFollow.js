@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FcDocument } from "react-icons/fc";
-function SocialFallow() {
+function SocialFollow() {
   return (
     <div className="social__cont">
       <a
@@ -34,4 +34,4 @@ function SocialFallow() {
   );
 }
 
-export default SocialFallow;
+export default SocialFollow;

@@ -1,6 +1,7 @@
 import React from "react";
 import { ContactUs } from "../components/ContactUs";
 import { Container } from "react-bootstrap";
+import SocialFollow from "../components/SocialFollow";
 
 function Contact() {
   return (
@@ -13,6 +14,7 @@ function Contact() {
         </h5>
       </Container>
       <ContactUs />
+      <SocialFollow style={{ marginLeft: "2rem" }} />
     </div>
   );
 }
