@@ -202,3 +202,17 @@ code {
   font-family: "Rubik", sans-serif !important;
   text-transform: uppercase;
 }
+.projects__media {
+  box-shadow: 0 1px 5px rgb(0 0 0 / 3%), 0 5px 30px rgb(0 0 0 / 10%);
+}
+
+.projects__img {
+  transition: all 0.5s ease;
+  width: 115%;
+  border-radius: 5px;
+}
+
+.projects__img:hover {
+  width: 120%;
+  /* width: 125%; */
+}

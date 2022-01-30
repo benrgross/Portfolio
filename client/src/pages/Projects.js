@@ -9,7 +9,7 @@ function Projects() {
         <Row>
           <Col md={6}>
             <div className="projects__media">
-              <img className="projects__img" src="/img/trowel-snapshot-2" />
+              <img className="projects__img" src="/img/trowel-snapshot-2.png" />
             </div>
           </Col>
           <Col></Col>
