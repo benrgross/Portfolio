@@ -1,11 +1,21 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Row, Col, Button, ListGroup } from "react-bootstrap";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import API from "../utils/API";
 
 function Projects() {
   const [spotlight, setSpotlight] = useState(true);
+  const [projects, setProjects] = useState([]);
 
+  useEffect(() => {
+    loadProjects();
+  }, []);
+
+  const loadProjects = async () => {
+    const { data } = await API.getProjects();
+    console.log(data);
+  };
   const goToProject = () => {
     console.log("click");
     setSpotlight(false);
