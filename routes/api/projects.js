@@ -1,15 +1,7 @@
 const router = require("express").Router();
-const axios = require("axios");
+const { route } = require(".");
+const projectController = require("../../controllers/projectController");
 
-router.post("/email", async (rec, res) => {
-  try {
-    axios.post(
-      "https://api.emailjs.com/api/v1.0/email/send-form/service_id",
-      req.body.form
-    );
-  } catch (err) {
-    console.log(err);
-  }
-});
+router.route("/").get(projectController.findAll);
 
 module.exports = router;
