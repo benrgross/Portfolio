@@ -1,5 +1,6 @@
 import React, { useReducer, createContext, useContext } from "react";
-import { SPOTLIGHT } from "./actions";
+import ProjectSpotlight from "../components/ProjectSpotlight";
+import { PROJECTS, SPOTLIGHT } from "./actions";
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -11,6 +12,11 @@ const reducer = (state, action) => {
         ...state,
         spotlight: action.switch,
       };
+    case PROJECTS:
+      return {
+        ...state,
+        projects: action.load,
+      };
     default:
       return state;
   }
@@ -19,6 +25,7 @@ const reducer = (state, action) => {
 const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
     spotlight: true,
+    projects: [{}],
   });
   return <Provider value={[state, dispatch]} {...props} />;
 };
