@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, ListGroup } from "react-bootstrap";
 
 function Projects() {
   const [spotlight, setSpotlight] = useState(true);
@@ -55,7 +55,44 @@ function Projects() {
           </Row>
         </Container>
       ) : (
-        <h1>Trowel</h1>
+        <Container className="projects__spotlight-cont">
+          <Row>
+            <h1 className="projects__spotlight-header">Trowel</h1>
+          </Row>
+          <Row>
+            <p className="projects__spotlight-blurb">
+              An app intended for professional gardeners to organize plants and
+              vital information by their clients.
+            </p>
+          </Row>
+          <Row>
+            <Container className="spotlight__stack-cont">
+              <ListGroup horizontal className="spotlight__stack-listgroup">
+                <ListGroup.Item className="spotlight__stack-listitem">
+                  / React
+                </ListGroup.Item>
+                <ListGroup.Item className="spotlight__stack-listitem">
+                  / Node.Js
+                </ListGroup.Item>
+                <ListGroup.Item className="spotlight__stack-listitem">
+                  / MongoDb
+                </ListGroup.Item>
+              </ListGroup>
+            </Container>
+          </Row>
+          <Row>
+            <div>
+              <figure className="projects__spotlight-media">
+                <img
+                  src="/img/trowel-snapshot-2.png"
+                  className="projects__spotlight-img"
+                  alt="website page example"
+                />
+              </figure>
+            </div>
+          </Row>
+          <Row></Row>
+        </Container>
       )}
     </div>
   );
