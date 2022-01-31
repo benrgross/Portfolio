@@ -220,6 +220,7 @@ code {
 
 .projects__img:hover {
   width: 125%;
+  cursor: pointer;
 
   /* width: 125%; */
 }
@@ -244,4 +245,13 @@ code {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   font-weight: 200;
+}
+
+.projects__view-project-btn {
+  font-family: "Rubik", sans-serif !important;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 2rem;
+  display: flex;
+  align-self: center;
 }
