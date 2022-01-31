@@ -1,3 +1,3 @@
 module.exports = {
-  Project: require("./porject"),
+  Project: require("./project"),
 };
