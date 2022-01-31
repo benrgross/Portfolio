@@ -7,6 +7,7 @@ function ProjectMain() {
   const goToProject = () => {
     console.log("click");
     setSpotlight(false);
+    console.log(spotlight);
   };
   return (
     <Container className="projects__cont">
