@@ -225,5 +225,10 @@ code {
 }
 
 .projects__summary {
-  padding: 15rem 6rem;
+  padding: 15rem 0rem 0rem 6rem;
+}
+
+.projects__summary-blurb {
+  line-height: 175%;
+  font-size: 1.375rem;
 }

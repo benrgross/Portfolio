@@ -14,6 +14,10 @@ function Projects() {
           </Col>
           <Col className="projects__summary">
             <h2 className="projects__summary-title">Trowel</h2>
+            <p className="projects__summary-blurb">
+              An App for landscapers to look up valuable plant information and
+              organize gardens by their clients
+            </p>
           </Col>
         </Row>
       </Container>
