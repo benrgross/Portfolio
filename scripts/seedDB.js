@@ -29,6 +29,11 @@ const projectSeed = [
       "An App to help dieters track the ingredients in their meals, to better identify their effect on their digestive system.",
     blurb_spotlight:
       "Pipe Cleaner is intended to help the user track ingredients to better understand the effect on their personal digestive system.",
+    contribution: [
+      "Logo Design",
+      "Front End Development",
+      "Back End Development",
+    ],
     stack: ["jQuery", "Node.Js", "Handlebars", "Bulma", "Express"],
     webstieUrl: "http://four-top.herokuapp.com/",
     githubUrl: "https://github.com/benrgross/Party-Of-Four",
