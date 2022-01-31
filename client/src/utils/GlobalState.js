@@ -1,4 +1,5 @@
 import React, { useReducer, createContext, useContext } from "react";
+import { SPOTLIGHT } from "./actions";
 
 const StoreContext = createContext();
 const { Provider } = StoreContext;
@@ -10,6 +11,8 @@ const reducer = (state, action) => {
         ...state,
         spotlight: true,
       };
+    default:
+      return state;
   }
 };
 
@@ -23,3 +26,5 @@ const StoreProvider = ({ value = [], ...props }) => {
 const useStoreContext = () => {
   return useContext(StoreContext);
 };
+
+export { StoreProvider, useStoreContext };
