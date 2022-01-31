@@ -225,10 +225,23 @@ code {
 }
 
 .projects__summary {
-  padding: 15rem 0rem 0rem 6rem;
+  padding: 10rem 3rem 0rem 6rem;
 }
 
-.projects__summary-blurb {
+.projects__summary--blurb {
+  margin-top: 2rem;
   line-height: 175%;
   font-size: 1.375rem;
+  font-weight: 200;
+}
+
+.projects__summary--list-group {
+  padding-left: 0px;
+  list-style-type: none;
+}
+
+.projects__summary--list-items {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  font-weight: 200;
 }
