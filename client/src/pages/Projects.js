@@ -8,11 +8,13 @@ function Projects() {
         <h2 className="projects__h2">Projects</h2>
         <Row>
           <Col md={6}>
-            <div className="projects__media">
+            <figure className="projects__media">
               <img className="projects__img" src="/img/trowel-snapshot-2.png" />
-            </div>
+            </figure>
           </Col>
-          <Col></Col>
+          <Col className="projects__summary">
+            <h2 className="projects__summary-title">Trowel</h2>
+          </Col>
         </Row>
       </Container>
     </div>

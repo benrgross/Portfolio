@@ -200,19 +200,30 @@ code {
 
 .projects__h2 {
   font-family: "Rubik", sans-serif !important;
-  text-transform: uppercase;
+  margin-left: 2rem;
 }
 .projects__media {
-  box-shadow: 0 1px 5px rgb(0 0 0 / 3%), 0 5px 30px rgb(0 0 0 / 10%);
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 20px;
+  margin-inline-end: 20px;
 }
 
 .projects__img {
-  transition: all 0.5s ease;
+  margin-top: 5rem;
+  margin-left: 0rem;
+  transition: all 0.35s ease;
   width: 115%;
   border-radius: 5px;
+  box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
 }
 
 .projects__img:hover {
-  width: 120%;
+  width: 125%;
+
   /* width: 125%; */
+}
+
+.projects__summary {
+  padding: 15rem 6rem;
 }
