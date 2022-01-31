@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect } from "react";
+import { useStoreContext } from "../utils/GlobalState";
 import ProjectMain from "../components/ProjectMain";
 import ProjectSpotlight from "../components/ProjectSpotlight";
 
 import API from "../utils/API";
 
 function Projects() {
-  const [spotlight, setSpotlight] = useState(true);
-  const [projects, setProjects] = useState([]);
+  const [state, dispatch] = useStoreContext();
 
   useEffect(() => {
     loadProjects();
@@ -17,7 +17,7 @@ function Projects() {
     console.log(data);
   };
 
-  return <div>{spotlight ? <ProjectMain /> : <ProjectSpotlight />}</div>;
+  return <div>{state.spotlight ? <ProjectMain /> : <ProjectSpotlight />}</div>;
 }
 
 export default Projects;

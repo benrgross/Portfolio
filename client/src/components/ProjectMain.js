@@ -1,13 +1,17 @@
 import React, { useState } from "react";
+import { useStoreContext } from "../utils/GlobalState";
 import { Container, Row, Col, Button, ListGroup } from "react-bootstrap";
+import { SPOTLIGHT } from "../utils/actions";
 
 function ProjectMain() {
-  const [spotlight, setSpotlight] = useState(true);
+  const [state, dispatch] = useStoreContext();
 
   const goToProject = () => {
     console.log("click");
-    setSpotlight(false);
-    console.log(spotlight);
+    dispatch({
+      type: "SPOTLIGHT",
+      switch: false,
+    });
   };
   return (
     <Container className="projects__cont">

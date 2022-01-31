@@ -9,7 +9,7 @@ const reducer = (state, action) => {
     case SPOTLIGHT:
       return {
         ...state,
-        spotlight: true,
+        spotlight: action.switch,
       };
     default:
       return state;
