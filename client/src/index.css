@@ -256,6 +256,38 @@ code {
   align-self: center;
 }
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .projects__cont {
+    margin-left: 0px;
+  }
+  .projects__media-col {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .projects__img {
+    margin-top: 5rem;
+    margin-left: 0rem;
+    transition: all 0.35s ease;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
+  }
+  .projects__h2 {
+    font-family: "Rubik", sans-serif !important;
+  }
+  .projects__summary {
+    padding: 2rem;
+  }
+
+  .projects__summary-title {
+    margin: auto;
+    display: flex;
+    align-self: center;
+  }
+}
+
 .projects__spotlight-cont {
   margin: auto;
   justify-content: center;

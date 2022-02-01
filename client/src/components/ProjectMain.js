@@ -24,7 +24,12 @@ function ProjectMain() {
         return (
           <div key={project._id}>
             <Row key={project._id}>
-              <Col key={project._id} md={6}>
+              <Col
+                key={project._id}
+                sm={12}
+                md={6}
+                className="projects__media-col"
+              >
                 <figure key={project._id} className="projects__media">
                   <img
                     className="projects__img"
