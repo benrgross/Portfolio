@@ -9,29 +9,26 @@ function ProjectSpotlight() {
   return (
     <Container className="projects__spotlight-cont">
       <Row>
-        <h1 className="projects__spotlight-header">Trowel</h1>
+        <h1 className="projects__spotlight-header">{state.project[0].name}</h1>
       </Row>
       <Row>
         <p className="projects__spotlight-blurb">
-          An app intended for professional gardeners to organize plants and
-          vital information by their clients.
+          {state.project[0].blurb_spotlight}
         </p>
       </Row>
       <Row>
         <Container className="spotlight__stack-cont">
           <ListGroup horizontal className="spotlight__stack-listgroup">
-            <ListGroup.Item className="spotlight__stack-listitem">
-              / React
-            </ListGroup.Item>
-            <ListGroup.Item className="spotlight__stack-listitem">
-              / Node.Js
-            </ListGroup.Item>
-            <ListGroup.Item className="spotlight__stack-listitem">
-              / MongoDb
-            </ListGroup.Item>
-            <ListGroup.Item className="spotlight__stack-listitem">
-              / Cheerio
-            </ListGroup.Item>
+            {state.project[0].stack.map((item) => {
+              return (
+                <ListGroup.Item
+                  key={item}
+                  className="spotlight__stack-listitem"
+                >
+                  / {item}
+                </ListGroup.Item>
+              );
+            })}
           </ListGroup>
         </Container>
       </Row>
@@ -39,7 +36,7 @@ function ProjectSpotlight() {
         <div>
           <figure className="projects__spotlight-media">
             <img
-              src="/img/trowel-snapshot-2.png"
+              src={state.project[0].img}
               className="projects__spotlight-img"
               alt="website page example"
             />
@@ -48,38 +45,22 @@ function ProjectSpotlight() {
       </Row>
       <Row>
         <h3 className="projects__spotlight-why-head">Why I Built It</h3>
-        <p className="projects__spotlight-why-blurb">
-          I built trowel as the culminating project for my bootcamp. Coming from
-          owning a landscaping company, I wanted to create an app to help my day
-          to day operations. While there are a lot of gardening apps out there,
-          there arent any specifically directed at professionals with the key
-          information about plants we want to have on hand. The app aims to let
-          the user generate a client list, go into each client and view, add or
-          edit the plants in that garden. This is particulary useful when you
-          have new employees who are not familiar with a clients garden or the
-          plants within them.
-        </p>
+        <p className="projects__spotlight-why-blurb">{state.project[0].why}</p>
         <h3 className="projects__spotlight-why-head">The Future</h3>
         <p className="projects__spotlight-why-blurb">
-          Trowel is far from done, and in my spare time I intend to keep adding
-          to its functionality and quality of data. I plan to integrate weather
-          data to help manage watering schedules and forecast plant care. The
-          end product will be a marketable organization and information
-          application for professional gardening and landscaping companies that
-          will relieve the all to familiar stress of keeping all the accounts
-          and plant needs within the gardeners head.
+          {state.project[0].future}
         </p>
       </Row>
       <Row>
         <Container className="projects__btn-cont">
           <Button
             className="projects__button-visit"
-            href="https://trowel-app.herokuapp.com/"
+            href={state.project[0].websiteUrl}
           >
             Visit Site
           </Button>
           <a
-            href="https://github.com/benrgross/trowel"
+            href={state.project[0].githubUrl}
             className="social__icon social__gitHub-projects"
             alt="github icon"
           >

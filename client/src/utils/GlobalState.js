@@ -8,6 +8,7 @@ const reducer = (state, action) => {
   switch (action.type) {
     case PROJECTS:
       return {
+        ...state,
         spotlight: true,
         projects: action.value,
       };
@@ -15,6 +16,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         spotlight: action.switch,
+        project: action.project,
       };
 
     default:
@@ -26,6 +28,7 @@ const StoreProvider = ({ value = [], ...props }) => {
   const [state, dispatch] = useReducer(reducer, {
     projects: [],
     spotlight: true,
+    project: {},
   });
   return <Provider value={[state, dispatch]} {...props} />;
 };

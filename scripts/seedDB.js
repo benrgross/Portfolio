@@ -35,7 +35,7 @@ const projectSeed = [
       "Back End Development",
     ],
     stack: ["jQuery", "Node.Js", "Handlebars", "Bulma", "Express"],
-    webstieUrl: "http://four-top.herokuapp.com/",
+    websiteUrl: "http://four-top.herokuapp.com/",
     githubUrl: "https://github.com/benrgross/Party-Of-Four",
     img: "/img/pipe-cleaner.png",
     why: "The inspiration behind Pipe Cleaner was that my fiance was struggleing with a gastrointestinal disease. She had to maticulously track all the ingredients in the meals she was eating in order to identify the foods that were causing her distress. One of the issues was that it was becoming hard for her to remember what she ate without writing it down, and it was inconvenient for her to cary around a journal or search through notes in her phone. I wanted to build an app that gave her an easy to use dashboard for logging and refferencing ingredients in her meals.",

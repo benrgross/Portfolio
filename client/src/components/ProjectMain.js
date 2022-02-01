@@ -6,10 +6,14 @@ import { SPOTLIGHT } from "../utils/actions";
 function ProjectMain() {
   const [state, dispatch] = useStoreContext();
 
-  const goToProject = () => {
+  const goToProject = (project) => {
+    const projectId = state.projects.filter(
+      (selection) => selection._id === project.target.name
+    );
     dispatch({
       type: SPOTLIGHT,
       switch: false,
+      project: projectId,
     });
   };
 
@@ -25,6 +29,7 @@ function ProjectMain() {
                   <img
                     className="projects__img"
                     src={project.img}
+                    name={project._id}
                     alt="snapshot of project website"
                     onClick={goToProject}
                   />
@@ -44,7 +49,8 @@ function ProjectMain() {
                 </ul>
                 <Button
                   className="projects__view-project-btn"
-                  onClick={() => goToProject(project.name)}
+                  name={project.name}
+                  onClick={() => goToProject(project)}
                 >
                   View Project
                 </Button>
