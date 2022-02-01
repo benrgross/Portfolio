@@ -49,8 +49,8 @@ function ProjectMain() {
                 </ul>
                 <Button
                   className="projects__view-project-btn"
-                  name={project.name}
-                  onClick={() => goToProject(project)}
+                  name={project._id}
+                  onClick={(e) => goToProject(e)}
                 >
                   View Project
                 </Button>
