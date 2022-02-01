@@ -1,9 +1,11 @@
 import React from "react";
+import { useStoreContext } from "../utils/GlobalState";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { Container, Row, Button, ListGroup } from "react-bootstrap";
 
 function ProjectSpotlight() {
+  const [state, dispatch] = useStoreContext();
   return (
     <Container className="projects__spotlight-cont">
       <Row>

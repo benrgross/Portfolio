@@ -1,10 +1,10 @@
 import React, { useEffect } from "react";
 import { useStoreContext } from "../utils/GlobalState";
 import ProjectMain from "../components/ProjectMain";
+import { Container, Row, Col, Button, ListGroup } from "react-bootstrap";
 import ProjectSpotlight from "../components/ProjectSpotlight";
-
 import API from "../utils/API";
-import { PROJECTS } from "../utils/actions";
+import { PROJECTS, SPOTLIGHT } from "../utils/actions";
 
 function Projects() {
   const [state, dispatch] = useStoreContext();
@@ -17,7 +17,7 @@ function Projects() {
     const { data } = await API.getProjects();
     dispatch({
       type: PROJECTS,
-      load: data,
+      value: data,
     });
     console.log(data);
   };
