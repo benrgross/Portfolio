@@ -1,43 +1,28 @@
-import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import React, { useEffect } from "react";
+import { useStoreContext } from "../utils/GlobalState";
+import ProjectMain from "../components/ProjectMain";
+import { Container, Row, Col, Button, ListGroup } from "react-bootstrap";
+import ProjectSpotlight from "../components/ProjectSpotlight";
+import API from "../utils/API";
+import { PROJECTS, SPOTLIGHT } from "../utils/actions";
 
 function Projects() {
-  return (
-    <div>
-      <Container className="projects__cont">
-        <h2 className="projects__h2">Projects</h2>
-        <Row>
-          <Col md={6}>
-            <figure className="projects__media">
-              <img
-                className="projects__img"
-                src="/img/trowel-snapshot-2.png"
-                alt="snapshot of project website"
-              />
-            </figure>
-          </Col>
-          <Col className="projects__summary">
-            <h2 className="projects__summary-title">Trowel</h2>
-            <p className="projects__summary--blurb">
-              An App for landscapers to look up valuable plant information and
-              organize gardens by their clients.
-            </p>
-            <ul className="projects__summary--list-group">
-              <li className="projects__summary--list-items"> ➢ Logo Design</li>
-              <li className="projects__summary--list-items">
-                {" "}
-                ➢ Front End Development
-              </li>
-              <li className="projects__summary--list-items">
-                {" "}
-                ➢ Back End Development
-              </li>
-            </ul>
-          </Col>
-        </Row>
-      </Container>
-    </div>
-  );
+  const [state, dispatch] = useStoreContext();
+
+  useEffect(() => {
+    loadProjects();
+  }, []);
+
+  const loadProjects = async () => {
+    const { data } = await API.getProjects();
+    dispatch({
+      type: PROJECTS,
+      value: data,
+    });
+    console.log(data);
+  };
+
+  return <div>{state.spotlight ? <ProjectMain /> : <ProjectSpotlight />}</div>;
 }
 
 export default Projects;

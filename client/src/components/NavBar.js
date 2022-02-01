@@ -1,7 +1,9 @@
 import React from "react";
-import "../index.css";
 
+import "../index.css";
+import API from "../utils/API";
 import { Row, Col, ListGroup, Container } from "react-bootstrap";
+import { PROJECTS, SPOTLIGHT } from "../utils/actions";
 
 function NavBar() {
   return (

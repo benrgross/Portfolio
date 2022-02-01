@@ -1,4 +1,5 @@
 import React from "react";
+import { StoreProvider } from "./utils/GlobalState";
 import { Container } from "react-bootstrap";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar";
@@ -11,16 +12,18 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <Router>
-      <Container className="wrap">
-        <NavBar />
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
-          <Route exact path="/projects" component={Projects} />
-          <Route exact path="/work" component={Work} />
-          <Route exact path="/contact" component={Contact} />
-        </Switch>
-      </Container>
+      <StoreProvider>
+        <Container className="wrap">
+          <NavBar />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/about" component={About} />
+            <Route exact path="/projects" component={Projects} />
+            <Route exact path="/work" component={Work} />
+            <Route exact path="/contact" component={Contact} />
+          </Switch>
+        </Container>
+      </StoreProvider>
     </Router>
   );
 }
