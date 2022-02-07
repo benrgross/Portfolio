@@ -13,12 +13,11 @@ function Home() {
       <p className="content__home--p">
         For me, the joy of coding lies in finding solutions to problems, solving
         puzzles and self education. I aim to uncover value and significance in
-        the process of my work. I am looking for a company to grow with, draw from my past 
-        experience and love of design, to contribute to my prospective work place 
-        in meaningful ways. 
-      <p className="content__home--p">  
-      
+        the process of my work. I am looking for a company to grow with, draw
+        from my past experience and love of design, to contribute to my
+        prospective work place in meaningful ways.{" "}
       </p>
+      <p className="content__home--p"></p>
       <SocialFollow />
     </div>
   );
