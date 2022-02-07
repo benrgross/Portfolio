@@ -8,27 +8,16 @@ function Home() {
       <p className="content__home--p">
         I'm Full Stack Web Developer with a certificate in Full Stack Web
         Engineering from Columbia University and a background in biology,
-        horticulture and landscape design. I have proven to be capable of
-        understanding problems from their minute details to their global
-        impacts.
+        horticulture and landscape design.
       </p>
       <p className="content__home--p">
-        I relentlessly work on my projects to provide my colleagues with clear
-        and efficient code for them to collaborate with in and develop succinct
-        and well functioning websites.
-      </p>
-      <p className="content__home--p">
-        For me, finding solutions to problems, solving puzzles and self
-        education are what makes web development so satisfying. I aim to uncover
-        value and significance in the process of my work and to implement these
-        values into my applications through the utilization of my design and
-        business management experience.
-      </p>
-      <p className="content__home--p">
-        While there is an overwhelming amount of information out there to learn,
-        I am looking for an employer who can help guide me down the rabbit holes
-        of information so that I may more effectively develop my skills as a
-        developer, as well as contribute to the business in meaningful ways.
+        For me, the joy of coding lies in finding solutions to problems, solving
+        puzzles and self education. I aim to uncover value and significance in
+        the process of my work. I am looking for a company to grow with, draw from my past 
+        experience and love of design, to contribute to my prospective work place 
+        in meaningful ways. 
+      <p className="content__home--p">  
+      
       </p>
       <SocialFollow />
     </div>
