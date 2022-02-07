@@ -64,6 +64,9 @@ code {
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
 
+  .content {
+    font-size: 0.98rem;
+  }
   .header__section--menu {
     align-self: center;
     width: 60%;
